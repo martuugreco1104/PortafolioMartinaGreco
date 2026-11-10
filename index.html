@@ -116,11 +116,11 @@
   <!-- ========================================================================= -->
   <!-- HERO INTERACTIVO WEBGL: MALLA LÍQUIDA SILVER & COBALT                     -->
   <!-- ========================================================================= -->
-  <section id="hero" class="min-h-[88vh] w-full relative isolate overflow-hidden flex items-center justify-center bg-[#F1F5F9] py-12 sm:py-16 px-4 sm:px-6 lg:px-8 select-none">
+  <section id="hero" class="w-full min-h-[90dvh] flex flex-col justify-center items-center px-4 relative isolate overflow-hidden py-16 bg-[#F1F5F9] select-none">
 
     <!-- Retícula arquitectónica sutil + líneas guía -->
-    <div class="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(148,163,184,0.14)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.14)_1px,transparent_1px)] [background-size:72px_72px]" aria-hidden="true"></div>
-    <div class="pointer-events-none absolute inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-6xl border-x border-slate-200/40 -z-10" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute inset-0 -z-10 opacity-30 sm:opacity-100 bg-[linear-gradient(to_right,rgba(148,163,184,0.14)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.14)_1px,transparent_1px)] [background-size:72px_72px]" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-6xl border-x border-slate-200/40 opacity-30 sm:opacity-100 -z-10" aria-hidden="true"></div>
 
     <!-- Resplandor ambiental suave detrás de la esfera 3D -->
     <div class="absolute w-[320px] sm:w-[600px] max-w-full h-[320px] sm:h-[600px] rounded-full bg-[#0055A5]/10 blur-[120px] pointer-events-none -z-10" aria-hidden="true"></div>
@@ -129,18 +129,17 @@
     <canvas id="heroWebGLCanvas" class="pointer-events-none absolute inset-0 w-full h-full z-10" aria-hidden="true"></canvas>
 
     <!-- Jerarquía Centralizada -->
-    <div class="relative z-20 w-full max-w-6xl mx-auto text-center">
-      <h1 class="font-display font-black text-4xl sm:text-7xl md:text-8xl lg:text-9xl tracking-tighter text-slate-900 leading-[0.9] px-2 mix-blend-multiply">
+    <div class="relative z-20 flex flex-col items-center text-center max-w-6xl mx-auto">
+      <h1 class="font-display text-5xl sm:text-7xl md:text-9xl font-black tracking-tighter text-slate-900 leading-none select-none drop-shadow-sm mix-blend-multiply">
         MARTINA GRECO
       </h1>
 
-      <p class="text-xs sm:text-base font-mono tracking-widest text-slate-700 uppercase mt-4 mb-2 px-2 drop-shadow-xs">
+      <p class="text-xs sm:text-sm font-mono tracking-widest text-slate-800 uppercase mt-4 mb-2 bg-white/70 backdrop-blur-sm px-3 py-1 rounded-full border border-slate-200/60">
         Diseño &amp; Desarrollo Web · Portfolio 2026
       </p>
 
-      <a href="#apps" class="min-h-[44px] inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-xs font-medium tracking-wide transition-all shadow-md hover:scale-105 active:scale-95 mt-3">
-        <span>Ver proyectos</span>
-        <span>↓</span>
+      <a href="#apps" class="min-h-[44px] inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-xs font-medium tracking-wide shadow-lg hover:scale-105 active:scale-95 transition-all mt-2">
+        Ver proyectos ↓
       </a>
     </div>
 
@@ -217,8 +216,8 @@
 
               <!-- Contenedor del Video: rounded-b-[34px] rounded-t-[12px] overflow-hidden bg-black relative -->
               <div class="w-full flex-1 rounded-b-[34px] rounded-t-[12px] overflow-hidden bg-black relative">
-                <video id="velezAppVideo" class="w-full h-full object-cover object-top" autoplay loop muted playsinline>
-                  <source src="vid/AppVelez.mp4" type="video/mp4">
+                <video id="velezAppVideo" class="w-full h-full object-cover object-top" autoplay loop muted playsinline webkit-playsinline preload="auto">
+                  <source src="./vid/AppVelez.mp4" type="video/mp4">
                 </video>
               </div>
 
@@ -263,8 +262,8 @@
             <span class="text-[9px] text-white/70">5G</span>
           </div>
           <div class="w-full flex-1 rounded-b-[30px] rounded-t-[10px] overflow-hidden bg-black relative">
-            <video class="w-full h-full object-cover object-top" loop muted playsinline preload="metadata">
-              <source src="vid/EPK/Jansound.mp4" type="video/mp4">
+            <video class="w-full h-full object-cover object-top" autoplay loop muted playsinline webkit-playsinline preload="auto">
+              <source src="./vid/EPK/Jansound.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -277,8 +276,8 @@
             <span class="text-[9px] text-white/70">5G</span>
           </div>
           <div class="w-full flex-1 rounded-b-[30px] rounded-t-[10px] overflow-hidden bg-black relative">
-            <video class="w-full h-full object-cover object-top" loop muted playsinline preload="metadata">
-              <source src="vid/EPK/AlejoV.mp4" type="video/mp4">
+            <video class="w-full h-full object-cover object-top" autoplay loop muted playsinline webkit-playsinline preload="auto">
+              <source src="./vid/EPK/AlejoV.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -291,8 +290,8 @@
             <span class="text-[9px] text-white/70">5G</span>
           </div>
           <div class="w-full flex-1 rounded-b-[30px] rounded-t-[10px] overflow-hidden bg-black relative">
-            <video class="w-full h-full object-cover object-top" loop muted playsinline preload="metadata">
-              <source src="vid/EPK/Dante_Toto.mp4" type="video/mp4">
+            <video class="w-full h-full object-cover object-top" autoplay loop muted playsinline webkit-playsinline preload="auto">
+              <source src="./vid/EPK/Dante_Toto.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -311,8 +310,8 @@
               <span class="text-[9px] text-white/70">5G</span>
             </div>
             <div class="w-full flex-1 rounded-b-[30px] rounded-t-[10px] overflow-hidden bg-black relative">
-              <video id="jansoundEpkVideo" class="w-full h-full object-cover object-top" loop muted playsinline preload="metadata">
-                <source src="vid/EPK/Jansound.mp4" type="video/mp4">
+              <video id="jansoundEpkVideo" class="w-full h-full object-cover object-top" autoplay loop muted playsinline webkit-playsinline preload="auto">
+                <source src="./vid/EPK/Jansound.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -327,8 +326,8 @@
               <span class="text-[9px] text-white/70">5G</span>
             </div>
             <div class="w-full flex-1 rounded-b-[30px] rounded-t-[10px] overflow-hidden bg-black relative">
-              <video id="danteEpkVideo" class="w-full h-full object-cover object-top" loop muted playsinline preload="metadata">
-                <source src="vid/EPK/Dante_Toto.mp4" type="video/mp4">
+              <video id="danteEpkVideo" class="w-full h-full object-cover object-top" autoplay loop muted playsinline webkit-playsinline preload="auto">
+                <source src="./vid/EPK/Dante_Toto.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -343,8 +342,8 @@
               <span class="text-[9px] text-white/70">5G</span>
             </div>
             <div class="w-full flex-1 rounded-b-[30px] rounded-t-[10px] overflow-hidden bg-black relative">
-              <video id="alejoEpkVideo" class="w-full h-full object-cover object-top" loop muted playsinline preload="metadata">
-                <source src="vid/EPK/AlejoV.mp4" type="video/mp4">
+              <video id="alejoEpkVideo" class="w-full h-full object-cover object-top" autoplay loop muted playsinline webkit-playsinline preload="auto">
+                <source src="./vid/EPK/AlejoV.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -829,8 +828,13 @@
         gl.viewport(0, 0, canvas.width, canvas.height);
         gl.uniform2f(uResolution, canvas.width, canvas.height);
 
-        // Reduce el radio de la esfera en un 25% en pantallas móviles (< 640px)
-        const scale = window.innerWidth < 640 ? 0.75 : 1.0;
+        // En mobile (< 640px) escala la esfera para ocupar ~280px - 320px de diámetro centrada
+        const minDim = Math.max(1, Math.min(w, h));
+        let scale = 1.0;
+        if (w < 640) {
+          const targetDiameter = Math.min(320, Math.max(280, w * 0.78));
+          scale = targetDiameter / (0.614 * minDim);
+        }
         gl.uniform1f(uSphereScale, scale);
       }
 
@@ -873,13 +877,42 @@
       requestAnimationFrame(render);
     })();
 
-    // 1. Control de Reproducción & Profundidad en Abanico 3D (EPK)
-    (function initEpkFanShowcase() {
+    // 1. Control de Reproducción EPK: Abanico 3D en Desktop y Autoplay Limpio en Mobile
+    (function initEpkShowcase() {
       const container = document.getElementById("epkFanContainer");
+      const mobileCarousel = document.getElementById("epkMobileCarousel");
+
+      // En mobile (< 768px) o dispositivos táctiles: reproducir automáticamente sin requerir hover
+      if (mobileCarousel) {
+        const mobileVideos = Array.from(mobileCarousel.querySelectorAll("video"));
+        mobileVideos.forEach((video) => {
+          video.muted = true;
+          video.playsInline = true;
+          video.setAttribute("webkit-playsinline", "");
+          video.play().catch(() => {});
+        });
+      }
+
       if (!container) return;
 
       const cards = Array.from(container.querySelectorAll(".epk-fan-card"));
+      const isTouchOrMobile = window.innerWidth < 768 || window.matchMedia("(hover: none)").matches;
 
+      // En pantallas táctiles / < 768px desactiva la pausa por hover
+      if (isTouchOrMobile) {
+        cards.forEach((card) => {
+          const video = card.querySelector("video");
+          if (video) {
+            video.muted = true;
+            video.playsInline = true;
+            video.setAttribute("webkit-playsinline", "");
+            video.play().catch(() => {});
+          }
+        });
+        return;
+      }
+
+      // En desktop con mouse: pausa en reposo y reproduce la tarjeta enfocada en hover
       function activateCard(activeCard) {
         cards.forEach((card) => {
           const video = card.querySelector("video");
@@ -903,6 +936,8 @@
         });
       }
 
+      resetCards();
+
       cards.forEach((card) => {
         card.addEventListener("mouseenter", () => activateCard(card));
         card.addEventListener("mouseleave", (e) => {
@@ -913,29 +948,6 @@
       });
 
       container.addEventListener("mouseleave", resetCards);
-    })();
-
-    // 1b. Reproducción automática de la tarjeta centrada en el carrusel móvil EPK
-    (function initEpkMobileCarousel() {
-      const carousel = document.getElementById("epkMobileCarousel");
-      if (!carousel) return;
-
-      const mobileCards = Array.from(carousel.querySelectorAll(".epk-mobile-card"));
-      if ("IntersectionObserver" in window) {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            const video = entry.target.querySelector("video");
-            if (!video) return;
-            if (entry.isIntersecting && entry.intersectionRatio >= 0.65) {
-              video.play().catch(() => {});
-            } else {
-              video.pause();
-            }
-          });
-        }, { root: carousel, threshold: 0.65 });
-
-        mobileCards.forEach((card) => observer.observe(card));
-      }
     })();
 
     // 2. Copiar Correo con Notificación Toast Instantánea
